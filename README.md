@@ -29,7 +29,7 @@ yt-dlp, ffmpeg, and for YouTube a JavaScript runtime, deno (yt-dlp needs one sin
 
 ### Terminal agents
 
-One command for every agent found on the computer (needs Node.js; `-g` installs for the user, without it for the current project only) — **docs**:
+One command for every agent found on the computer (needs Node.js; `-g` installs for the user, without it for the current project only) — **run**:
 
 ```sh
 npx skills add geragarazagh/youtube-download -g
@@ -37,7 +37,7 @@ npx skills add geragarazagh/youtube-download -g
 
 It puts the skill into `~/.agents/skills/youtube-download`, which Codex, Cursor, Cline, OpenCode and most other agents read, and links it into `~/.claude/skills` for Claude Code.
 
-Claude Code, as a plugin — **docs**:
+Claude Code, as a plugin — **run**:
 
 ```sh
 claude plugin marketplace add geragarazagh/youtube-download
@@ -87,6 +87,8 @@ The assistant answers in the language of the request and starts at once when the
 - The skill started by itself for all three plain requests, and for none of three near misses (an mp3 to m4a, a transcription of a local recording, the sound out of a local mp4).
 
 2026-11-15, the first draft (video, sound, playlist, subtitles, 4K, the Internet Archive, a Vimeo link that needs a login): 8 of 8 downloads right; the same requests without the skill downloaded too, with weaker files (no chapters or metadata, the sound re-encoded from Opus at twice the size, 4K as VP9 and Opus in MKV, which iPhones and QuickTime do not play).
+
+Installs from this repository, the same day: `npx skills add geragarazagh/youtube-download -g` into an empty home folder (files identical to the repository, linked for Claude Code and Antigravity), and the Claude Code plugin commands above, then «save only the sound of this video as mp3» through `/youtube-download:youtube-download` on Haiku 5.5 (an mp3 with the cover, the full length).
 
 Every command in `SKILL.md` was run on 2026-11-16 on the setup above. Not tested: other models, other agents, Linux and Windows.
 
