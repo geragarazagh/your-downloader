@@ -1,4 +1,4 @@
-<img src=".claude-plugin/icon.png" width="128" alt="youtube-download icon: a download arrow over a line">
+<img src="assets/icon.png" width="128" alt="youtube-download icon: a play sign turned down onto a line">
 
 # youtube-download: a skill for AI assistants that takes everything yt-dlp can from a video page
 
@@ -21,7 +21,7 @@ Each way is marked by how it was checked: **run** means installed and used for r
 
 ### The tools it needs
 
-yt-dlp, ffmpeg, and for YouTube a JavaScript runtime, deno (yt-dlp needs one since late 2025 to answer YouTube's challenges); Python 3.8 or newer for the text script. The assistant checks for them and, when one is missing, names the command and waits for a yes:
+yt-dlp, ffmpeg, and for YouTube a JavaScript runtime, deno (since version 2025.11.12 yt-dlp needs an external JavaScript runtime to answer YouTube's challenges); Python 3.8 or newer for the text script. The assistant checks for them and, when one is missing, names the command and waits for a yes:
 
 - macOS: `brew install yt-dlp ffmpeg` (Homebrew's yt-dlp brings deno).
 - Windows: `winget install yt-dlp.yt-dlp` (brings ffmpeg and deno).
@@ -64,7 +64,7 @@ What is this video about? And what do the top comments say?
 Save the thumbnail of this video.
 ```
 
-The assistant answers in the language of the request and starts at once when the link and the wish are clear. Files go to the Downloads folder unless the request names another place; a playlist goes into a folder of its own, numbered. It asks only when the link or the wish is missing, before using automatic captions or a machine translation, before using a browser login, and before switching yt-dlp to its daily build.
+The assistant answers in the language of the request and starts at once when the link and the wish are clear. Files go to the Downloads folder unless the request names another place; a playlist goes into a folder of its own, numbered. It asks only when the link or the wish is missing, before using automatic captions or a machine translation, before using a browser login, and before switching yt-dlp to its nightly build.
 
 ## What this skill does on the computer
 
@@ -90,7 +90,7 @@ The assistant answers in the language of the request and starts at once when the
 
 Installs from this repository, the same day: `npx skills add geragarazagh/youtube-download -g` into an empty home folder (files identical to the repository, linked for Claude Code and Antigravity), and the Claude Code plugin commands above, then «save only the sound of this video as mp3» through `/youtube-download:youtube-download` on Haiku 5.5 (an mp3 with the cover, the full length).
 
-Every command in `SKILL.md` was run on 2026-11-16 on the setup above. Not tested: other models, other agents, Linux and Windows.
+Every command in `SKILL.md` was run on 2026-11-16 on the setup above. On 2026-11-17 the latest stable yt-dlp was still 2026.10.26; with it, «Me at the zoo» downloaded for an iPhone as H.264 and AAC in mp4, 19 s, the full length. Not tested: other models, other agents, Linux and Windows.
 
 ## What it cannot do
 

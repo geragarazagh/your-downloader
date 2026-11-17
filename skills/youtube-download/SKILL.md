@@ -213,8 +213,9 @@ Read the error, then:
   change. Update it the way it was installed (`brew upgrade yt-dlp`,
   `pip install -U "yt-dlp[default]"`, `winget upgrade yt-dlp.yt-dlp`, or
   `yt-dlp -U` for the downloaded program) and check `deno --version`. Try once
-  more. Still failing: the daily build carries YouTube fixes days before the
-  monthly one, and the yt-dlp authors recommend it for regular use:
+  more. Still failing: the nightly build carries YouTube fixes days or weeks
+  before the next stable release, and the yt-dlp authors recommend it for
+  regular use:
   `yt-dlp --update-to nightly` (downloaded program) or
   `pip install -U --pre "yt-dlp[default]"`. Ask before switching.
 - `Sign in to confirm you're not a bot` that stays after updating: YouTube

@@ -19,6 +19,8 @@
     "websiteURL": "https://github.com/geragarazagh/youtube-download",
     "supportURL": "https://github.com/geragarazagh/youtube-download/issues",
     "privacyPolicyURL": "https://geragaraza.com/skills/privacy/",
+    "logo": "./assets/icon.png",
+    "composerIcon": "./assets/icon.png",
     "defaultPrompt": [
       "Download this video so it plays on my iPhone.",
       "Save only the audio of this video as mp3.",
