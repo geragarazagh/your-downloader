@@ -1,4 +1,4 @@
-<img src="assets/icon.png" width="128" alt="youtube-download icon: a play sign turned down onto a line">
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/icon-github-dark.png"><img src="assets/icon-github.png" width="128" alt="youtube-download icon: a play sign turned down onto a line"></picture>
 
 # youtube-download: a skill for AI assistants that takes everything yt-dlp can from a video page
 
