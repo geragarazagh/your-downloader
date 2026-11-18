@@ -100,6 +100,8 @@ Installs from this repository, the same day: `npx skills add geragarazagh/youtub
 
 Every command in `SKILL.md` was run on 2026-11-16 on the setup above. On 2026-11-17 the latest stable yt-dlp was still 2026.10.26; with it, «Me at the zoo» downloaded for an iPhone as H.264 and AAC in mp4, 19 s, the full length. Not tested: other models, other agents, Linux and Windows.
 
+Version 0.2.0 renames the skill from `youtube-download` to `your-downloader` and sets the catalogue icons; what the skill does is unchanged. On 2026-11-18 the installs were run again under the new name from this repository's v0.2.0 release, each into an empty home folder: `npx skills add geragarazagh/your-downloader -g` (files identical to `skills/your-downloader`), the Claude Code plugin commands above in Claude Code 2.1.326 (the plugin's skill folder identical), and `gemini extensions install` in Gemini CLI 0.68.0 (installed from the release, version 0.2.0, the skill folder identical).
+
 ## What it cannot do
 
 - Run in a chat app: the sandbox cannot reach video sites.
