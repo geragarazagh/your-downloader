@@ -44,6 +44,12 @@ claude plugin marketplace add geragarazagh/youtube-download
 claude plugin install youtube-download@youtube-download
 ```
 
+Gemini CLI, as an extension — **run** (2026-11-18, from this repository's latest release on GitHub, Gemini CLI 0.68.0, into an empty home folder: the extension installed and its skill listed by `gemini skills list`):
+
+```sh
+gemini extensions install https://github.com/geragarazagh/youtube-download
+```
+
 By hand, any agent that reads the Agent Skills folder (Codex, OpenCode, OpenClaw, Hermes, Grok Build) — **docs**: copy the folder `skills/youtube-download` (with `scripts/` inside) to `~/.agents/skills/youtube-download`. Claude Code reads `~/.claude/skills/youtube-download`; Antigravity reads `~/.gemini/config/skills/youtube-download`.
 
 ### No skills in the agent
