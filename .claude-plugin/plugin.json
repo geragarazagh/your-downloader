@@ -1,16 +1,17 @@
 {
-  "name": "youtube-download",
-  "displayName": "YouTube Download",
-  "version": "0.1.1",
+  "name": "your-downloader",
+  "displayName": "Your Downloader",
+  "version": "0.2.0",
   "description": "Downloads videos, their sound, subtitles, transcripts, thumbnails and comments from YouTube and about 1,700 other sites with yt-dlp, and checks the result.",
   "author": {
     "name": "Herman Harazha",
     "url": "https://geragaraza.com"
   },
-  "homepage": "https://github.com/geragarazagh/youtube-download",
-  "repository": "https://github.com/geragarazagh/youtube-download",
+  "homepage": "https://github.com/geragarazagh/your-downloader",
+  "repository": "https://github.com/geragarazagh/your-downloader",
   "license": "MIT",
   "keywords": [
+    "your-downloader",
     "yt-dlp",
     "youtube",
     "video-download",
@@ -20,6 +21,7 @@
     "comments",
     "agent-skills"
   ],
-  "supportUrl": "https://github.com/geragarazagh/youtube-download/issues",
-  "privacyPolicyUrl": "https://geragaraza.com/skills/privacy/"
+  "supportUrl": "https://github.com/geragarazagh/your-downloader/issues",
+  "privacyPolicyUrl": "https://geragaraza.com/skills/privacy/",
+  "icon": "./.claude-plugin/icon.png"
 }

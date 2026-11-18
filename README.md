@@ -1,6 +1,6 @@
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/icon-github-dark.png"><img src="assets/icon-github.png" width="128" alt="youtube-download icon: a play sign turned down onto a line"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/icon-github-dark.png"><img src="assets/icon-github.png" width="128" alt="your-downloader icon: a play sign turned down onto a line"></picture>
 
-# youtube-download: a skill for AI assistants that takes everything yt-dlp can from a video page
+# your-downloader: a skill for AI assistants that takes everything yt-dlp can from a video page
 
 A free, open source agent skill around [yt-dlp](https://github.com/yt-dlp/yt-dlp). Paste a link and say what to keep: «save this for my iPhone», «only the audio as mp3», «the first ten videos of this playlist», «with English subtitles», «from 1:30 to 2:45», «what is this video about», «what do people say in the comments». The assistant runs yt-dlp on the computer, checks the file, and says what it saved.
 
@@ -32,33 +32,33 @@ yt-dlp, ffmpeg, and for YouTube a JavaScript runtime, deno (since version 2025.1
 One command for every agent found on the computer (needs Node.js; `-g` installs for the user, without it for the current project only) — **run**:
 
 ```sh
-npx skills add geragarazagh/youtube-download -g
+npx skills add geragarazagh/your-downloader -g
 ```
 
-It puts the skill into `~/.agents/skills/youtube-download`, which Codex, Cursor, Cline, OpenCode and most other agents read, and links it into `~/.claude/skills` for Claude Code.
+It puts the skill into `~/.agents/skills/your-downloader`, which Codex, Cursor, Cline, OpenCode and most other agents read, and links it into `~/.claude/skills` for Claude Code.
 
 Claude Code, as a plugin — **run**:
 
 ```sh
-claude plugin marketplace add geragarazagh/youtube-download
-claude plugin install youtube-download@youtube-download
+claude plugin marketplace add geragarazagh/your-downloader
+claude plugin install your-downloader@your-downloader
 ```
 
 Gemini CLI, as an extension — **run** (2026-11-18, from this repository's latest release on GitHub, Gemini CLI 0.68.0, into an empty home folder: the extension installed and its skill listed by `gemini skills list`):
 
 ```sh
-gemini extensions install https://github.com/geragarazagh/youtube-download
+gemini extensions install https://github.com/geragarazagh/your-downloader
 ```
 
-By hand, any agent that reads the Agent Skills folder (Codex, OpenCode, OpenClaw, Hermes, Grok Build) — **docs**: copy the folder `skills/youtube-download` (with `scripts/` inside) to `~/.agents/skills/youtube-download`. Claude Code reads `~/.claude/skills/youtube-download`; Antigravity reads `~/.gemini/config/skills/youtube-download`.
+By hand, any agent that reads the Agent Skills folder (Codex, OpenCode, OpenClaw, Hermes, Grok Build) — **docs**: copy the folder `skills/your-downloader` (with `scripts/` inside) to `~/.agents/skills/your-downloader`. Claude Code reads `~/.claude/skills/your-downloader`; Antigravity reads `~/.gemini/config/skills/your-downloader`.
 
 ### No skills in the agent
 
-Paste the text of [`SKILL.md`](skills/youtube-download/SKILL.md) into the agent's instructions (`AGENTS.md`, `CLAUDE.md`, `GEMINI.md` or the agent's settings), or as the first message of a session. Downloads work the same; for transcripts and comments the agent then uses the commands the skill gives for working without the script.
+Paste the text of [`SKILL.md`](skills/your-downloader/SKILL.md) into the agent's instructions (`AGENTS.md`, `CLAUDE.md`, `GEMINI.md` or the agent's settings), or as the first message of a session. Downloads work the same; for transcripts and comments the agent then uses the commands the skill gives for working without the script.
 
 ## Use
 
-Paste a link and say what you want, in any language. To call the skill by name: `/youtube-download` in Claude Code (`/youtube-download:youtube-download` when installed as the plugin) and Antigravity; `$youtube-download` in Codex.
+Paste a link and say what you want, in any language. To call the skill by name: `/your-downloader` in Claude Code (`/your-downloader:your-downloader` when installed as the plugin) and Antigravity; `$your-downloader` in Codex.
 
 ```
 Download this so it plays on my iPhone: https://www.youtube.com/watch?v=…
@@ -83,6 +83,8 @@ The assistant answers in the language of the request and starts at once when the
 - The installers are other people's programs with their own rules: `npx skills` (Vercel) sends an anonymous install count unless `DISABLE_TELEMETRY=1` is set.
 
 ## Tested on
+
+Until 0.2.0 (2026-11-18) the skill was named `youtube-download`, in the repository geragarazagh/youtube-download, which GitHub now redirects here; the runs below used that name.
 
 2026-11-16, in a fresh Claude Code configuration (its own login, no user instructions, only this skill and two others of the same author (text to speech, audiobooks), so that a near miss could start the wrong one): Claude Haiku 5.5 (`claude-haiku-5-5`) in Claude Code 2.1.325 on macOS 27.2 (Apple M3 Pro), with yt-dlp 2026.10.26 (Homebrew), ffmpeg 9.0.2 and deno 2.9.8. Real requests; every file checked with ffprobe:
 

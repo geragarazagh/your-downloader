@@ -1,13 +1,13 @@
 {
-  "name": "youtube-download",
-  "description": "The youtube-download skill: everything yt-dlp can take from a video page.",
+  "name": "your-downloader",
+  "description": "The your-downloader skill: everything yt-dlp can take from a video page.",
   "owner": {
     "name": "Herman Harazha",
     "url": "https://geragaraza.com"
   },
   "plugins": [
     {
-      "name": "youtube-download",
+      "name": "your-downloader",
       "source": "./",
       "description": "Downloads videos, their sound, subtitles, transcripts, thumbnails and comments from YouTube and about 1,700 other sites with yt-dlp, and checks the result."
     }
