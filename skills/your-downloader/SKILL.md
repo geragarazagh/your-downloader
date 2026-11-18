@@ -1,11 +1,11 @@
 ---
-name: youtube-download
+name: your-downloader
 description: "Downloads from YouTube and 1,700 other sites with yt-dlp: video that plays on any phone or TV, audio as m4a or mp3, subtitles, transcripts, thumbnails, comments, clips, playlists and channels. Use when someone pastes a video link and wants to save it, its sound, its text or its comments."
 license: MIT
 compatibility: "Needs an assistant that runs commands on the person's computer with internet access (a terminal agent). Uses yt-dlp and ffmpeg; YouTube also needs deno. The transcript and comments script needs Python 3.8+. Chat apps cannot reach video sites from their sandbox."
 ---
 
-# YouTube download
+# Your Downloader
 
 Everything yt-dlp can take from a video page, done right: the video, its
 sound, subtitles, a text transcript, the thumbnail, comments, a part of a
@@ -90,7 +90,7 @@ It lives at `scripts/read_video.py` next to this file; call it by its full
 path, because your working folder is the person's, not the skill's:
 
 ```
-python3 "/full/path/to/youtube-download/scripts/read_video.py" -o FOLDER "LINK"
+python3 "/full/path/to/your-downloader/scripts/read_video.py" -o FOLDER "LINK"
 ```
 
 It writes one `TITLE.md` per link into FOLDER and prints its path: link,

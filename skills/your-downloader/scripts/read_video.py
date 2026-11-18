@@ -3,7 +3,7 @@
 # would raise, and the script stays readable on Python 3.8.
 # ruff: noqa: UP031
 """read_video.py - one video -> one text file: details, description, chapters,
-transcript, and comments if asked. Part of the youtube-download skill.
+transcript, and comments if asked. Part of the your-downloader skill.
 
 usage: python3 read_video.py [options] URL [URL ...]
 

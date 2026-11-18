@@ -1,5 +1,5 @@
 {
-  "name": "youtube-download",
-  "version": "0.1.1",
+  "name": "your-downloader",
+  "version": "0.2.0",
   "description": "Downloads videos, their sound, subtitles, transcripts, thumbnails and comments from YouTube and about 1,700 other sites with yt-dlp, and checks the result."
 }
