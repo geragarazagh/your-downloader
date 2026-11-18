@@ -1,7 +1,7 @@
 {
   "name": "your-downloader",
   "displayName": "Your Downloader",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Downloads videos, their sound, subtitles, transcripts, thumbnails and comments from YouTube and about 1,700 other sites with yt-dlp, and checks the result.",
   "author": {
     "name": "Herman Harazha",
