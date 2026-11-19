@@ -1,6 +1,6 @@
 {
   "name": "your-downloader",
-  "description": "The your-downloader skill: everything yt-dlp can take from a video page.",
+  "description": "Downloads video, audio, subtitles and comments from YouTube and other sites with yt-dlp.",
   "owner": {
     "name": "Herman Harazha",
     "url": "https://geragaraza.com"
@@ -9,7 +9,7 @@
     {
       "name": "your-downloader",
       "source": "./",
-      "description": "Downloads videos, their sound, subtitles, transcripts, thumbnails and comments from YouTube and about 1,700 other sites with yt-dlp, and checks the result."
+      "description": "Downloads video, audio, subtitles and comments from YouTube and other sites with yt-dlp."
     }
   ]
 }
