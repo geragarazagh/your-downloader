@@ -1,7 +1,7 @@
 {
   "name": "your-downloader",
-  "version": "0.2.1",
-  "description": "Downloads videos, their sound, subtitles, transcripts, thumbnails and comments from YouTube and about 1,700 other sites with yt-dlp, and checks the result.",
+  "version": "0.2.2",
+  "description": "Downloads video, audio, subtitles and comments from YouTube and other sites with yt-dlp.",
   "author": {
     "name": "Herman Harazha",
     "url": "https://geragaraza.com"
@@ -13,7 +13,7 @@
   "interface": {
     "displayName": "Your Downloader",
     "shortDescription": "Videos, sound, text, comments",
-    "longDescription": "Paste a video link and say what to keep: the assistant runs yt-dlp on the computer and saves an mp4 that plays on phones, TVs and QuickTime, or only the sound as m4a or mp3, subtitles, the thumbnail, a part of the video, a whole playlist or channel; or writes a text file with the details, the transcript and the comments for reading or summarising. Checks every file before saying it is done. Works with YouTube and about 1,700 other sites. Nothing is installed without the person's yes; nothing is sent anywhere except the requests to the video site.",
+    "longDescription": "Downloads video, audio, subtitles and comments from YouTube and other sites with yt-dlp.",
     "developerName": "Herman Harazha",
     "category": "Productivity",
     "capabilities": [],
